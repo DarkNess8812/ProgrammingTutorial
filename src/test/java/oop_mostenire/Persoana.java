@@ -18,6 +18,9 @@ public class Persoana {
     //dinamic = intr-o ierarhie de clase obtiunite prin mostenire poate avea implementari diferite
     //polimorfismul dinamic se regaseste doar cand este aplicat prin mostenire
 
+    //polimorfismul static = actiunea prin care putem avea metode cu acelasi nume insa diferentierea fiind facuta
+    //prin numar/tip parametrii
+
     private String nume;
     private String prenume;
     private int varsta;

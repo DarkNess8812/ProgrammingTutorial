@@ -24,6 +24,13 @@ public class MostenireTest {
 
         System.out.println();
 
+        angajat.marire();
+        angajat.marire(10);
+        angajat.marire("engineer");
+        angajat.marire(10, "engineer");
+
+        System.out.println();
+
         Sportiv sportiv = new Sportiv("Ionescu", "Ion", 10, "masculin",
                 "Timisoara", 2, true, "fotbal",
                 true, 2);
