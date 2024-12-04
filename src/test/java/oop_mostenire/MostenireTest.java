@@ -13,6 +13,17 @@ public class MostenireTest {
 
         System.out.println();
 
+        System.out.println(angajat.getVarsta());
+
+        angajat.setVarsta(21);
+        System.out.println(angajat.getVarsta());
+
+        System.out.println();
+
+        angajat.mananca();
+
+        System.out.println();
+
         Sportiv sportiv = new Sportiv("Ionescu", "Ion", 10, "masculin",
                 "Timisoara", 2, true, "fotbal",
                 true, 2);

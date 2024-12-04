@@ -16,28 +16,20 @@ public class Angajat extends Persoana {
         this.experienta = experienta;
     }
 
-    public void infoAngajat(){
+    public void infoAngajat() {
         infoPersoana();
-        System.out.println("Firma la care lucreaza angajatul este "+ firma);
-        System.out.println("Pozitia angajatului in firma este "+ pozitie);
-        System.out.println("Salarul angajatului este "+ salar);
-        System.out.println("Experienta angajatului este de "+ experienta);
+        System.out.println("Firma la care lucreaza angajatul este " + firma);
+        System.out.println("Pozitia angajatului in firma este " + pozitie);
+        System.out.println("Salarul angajatului este " + salar);
+        System.out.println("Experienta angajatului este de " + experienta);
     }
 
-    public String getFirma() {
-        return firma;
+    public String getPozitie() {
+        return pozitie;
     }
 
-    public void setFirma(String firma) {
-        this.firma = firma;
-    }
-
-    public String getExperienta() {
-        return experienta;
-    }
-
-    public void setExperienta(String experienta) {
-        this.experienta = experienta;
+    public void setPozitie(String pozitie) {
+        this.pozitie = pozitie;
     }
 
     public int getSalar() {
@@ -48,15 +40,28 @@ public class Angajat extends Persoana {
         this.salar = salar;
     }
 
-    public String getPozitie() {
-        return pozitie;
+    public String getExperienta() {
+        return experienta;
     }
 
-    public void setPozitie(String pozitie) {
-        this.pozitie = pozitie;
+    public void setExperienta(String experienta) {
+        this.experienta = experienta;
+    }
+
+    public String getFirma() {
+        return firma;
+    }
+
+    public void setFirma(String firma) {
+        this.firma = firma;
+    }
+
+    public void mananca() {
+        System.out.println("Angajatul mananca cand are pauza ");
+
+
     }
 }
-
 
 
 

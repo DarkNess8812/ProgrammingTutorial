@@ -1,6 +1,6 @@
 package oop_mostenire;
 
-public class Sportiv extends Persoana{
+public class Sportiv extends Persoana {
 
     private String sport;
     private boolean sportEchipa;
@@ -18,14 +18,19 @@ public class Sportiv extends Persoana{
         this.medali = medali;
     }
 
-    public void infoSportiv(){
+    public void infoSportiv() {
         infoPersoana();
-        System.out.println("Sportul pe care il practica este "+ sport);
-        System.out.println("Sportivul face parte dintr-o echipa? "+ sportEchipa);
-        System.out.println("De cati ani practica sportul "+ experienta);
-        System.out.println("Practica sport de performanta? "+ perfomanta);
-        System.out.println("Cate medalii a castigat sportivul "+ medali);
+        System.out.println("Sportul pe care il practica este " + sport);
+        System.out.println("Sportivul face parte dintr-o echipa? " + sportEchipa);
+        System.out.println("De cati ani practica sportul " + experienta);
+        System.out.println("Practica sport de performanta? " + perfomanta);
+        System.out.println("Cate medalii a castigat sportivul " + medali);
     }
+
+    public void mananca(){
+        System.out.println("Sportivul mananca dupa antrenament ");
+    }
+
 
     public String getSport() {
         return sport;
