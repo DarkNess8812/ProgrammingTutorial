@@ -1,17 +1,15 @@
 package oop_mostenire;
 
-public class Sportiv extends Persoana {
+public class Sportiv extends Persoana implements SportivInterface {
 
     private String sport;
     private boolean sportEchipa;
-    private int experienta;
     private boolean perfomanta;
     private int medali;
 
-    public Sportiv(String nume, String prenume, int varsta, String sex, String adresa, int experienta,
+    public Sportiv(String nume, String prenume, int varsta, String sex, String adresa,
                    boolean sportEchipa, String sport, boolean perfomanta, int medali) {
         super(nume, prenume, varsta, sex, adresa);
-        this.experienta = experienta;
         this.sportEchipa = sportEchipa;
         this.sport = sport;
         this.perfomanta = perfomanta;
@@ -22,7 +20,6 @@ public class Sportiv extends Persoana {
         infoPersoana();
         System.out.println("Sportul pe care il practica este " + sport);
         System.out.println("Sportivul face parte dintr-o echipa? " + sportEchipa);
-        System.out.println("De cati ani practica sportul " + experienta);
         System.out.println("Practica sport de performanta? " + perfomanta);
         System.out.println("Cate medalii a castigat sportivul " + medali);
     }
@@ -30,7 +27,6 @@ public class Sportiv extends Persoana {
     public void mananca(){
         System.out.println("Sportivul mananca dupa antrenament ");
     }
-
 
     public String getSport() {
         return sport;
@@ -40,12 +36,12 @@ public class Sportiv extends Persoana {
         this.sport = sport;
     }
 
-    public int getMedali() {
-        return medali;
+    public boolean isSportEchipa() {
+        return sportEchipa;
     }
 
-    public void setMedali(int medali) {
-        this.medali = medali;
+    public void setSportEchipa(boolean sportEchipa) {
+        this.sportEchipa = sportEchipa;
     }
 
     public boolean isPerfomanta() {
@@ -56,20 +52,32 @@ public class Sportiv extends Persoana {
         this.perfomanta = perfomanta;
     }
 
-    public int getExperienta() {
-        return experienta;
+    public int getMedali() {
+        return medali;
     }
 
-    public void setExperienta(int experienta) {
-        this.experienta = experienta;
+    public void setMedali(int medali) {
+        this.medali = medali;
     }
 
-    public boolean isSportEchipa() {
-        return sportEchipa;
+    @Override
+    public void saMeargaLaAntrenament() {
+
     }
 
-    public void setSportEchipa(boolean sportEchipa) {
-        this.sportEchipa = sportEchipa;
+    @Override
+    public void saNuLipseasca() {
+
+    }
+
+    @Override
+    public void saMananceSanatos() {
+
+    }
+
+    @Override
+    public void saMeargaLaConcursuri() {
+
     }
 }
 

@@ -31,16 +31,39 @@ public class MostenireTest {
 
         System.out.println();
 
+        angajat.ajungeLaTimpLaBirou();
+        angajat.respectaConduita();
+        angajat.absente();
+        angajat.munceste();
+
+        System.out.println();
+
+
         Sportiv sportiv = new Sportiv("Ionescu", "Ion", 10, "masculin",
-                "Timisoara", 2, true, "fotbal",
-                true, 2);
+                "Timisoara", true, "fotbal", true,
+                2);
         sportiv.infoSportiv();
 
         System.out.println();
+
+        sportiv.saMeargaLaAntrenament();
+        sportiv.saMananceSanatos();
+        sportiv.saMeargaLaConcursuri();
+        sportiv.saNuLipseasca();
+
+        System.out.println();
+
 
         Student student = new Student("Mihailovici", "Andreas", 21, "masculin",
                 "Bucuresti", "UTCB", "Constructii civile", 2,
                 true, true);
         student.infoStudent();
+
+       System.out.println();
+
+        student.mergeLaCursuri();
+        student.saNuAibeRestante();
+        student.saStieSaCopieze();
+        student.trebuieSaStudeze();
     }
 }
